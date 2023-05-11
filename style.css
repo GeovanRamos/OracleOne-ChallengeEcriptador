@@ -1,0 +1,311 @@
+*{
+ 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+body{
+    background: #E5E5E5;
+}
+
+.LogoAlura{
+    margin-left: 50px;
+    padding-top: 10px;
+}
+
+main{
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.text-area {
+    width: 600px;
+    height: 510px;
+    background: none;
+    border: none;
+    color: #0A3871;
+    line-height: 48px;
+    margin-top: 90px;
+    text-transform: full-width;
+}
+
+
+::placeholder{
+    color: #0A3871;
+}
+
+.text-area:focus{
+    outline: none;
+}
+
+.informacoes img{
+    text-align: right;
+
+}
+
+
+span {
+    font-size: 20px;
+    padding-bottom: 10px;
+    line-height: 150%;
+}
+
+
+.mensagem-sction{
+    width: 400px;
+    height: 944px;
+    background: #FFFFFF;
+    border-radius: 24px;
+    color: #0A3871;
+    margin-left: 98px;
+    margin-top: 20px;
+    padding-left: 20px;
+    box-shadow:  inset 0px 0px 5px 0 #e5e5e515;
+
+}
+
+
+.mensagem-nao-exibida p{
+    font-size: 16px;
+    text-align: center;
+    color: #495057;
+    padding: 30px;
+
+}
+
+.mensagem-nao-exibida h2{
+    font-size: 24px;
+    text-align: center;
+    color: #495057;
+    font-weight: 700px;
+    text-align: center;
+
+}
+
+.mensagem-nao-exibida img {
+    width: 80%;
+    height: auto;
+    margin: 200px 50px 20px 20px;
+}
+
+.mensagem-exibida{
+    display: none;
+}
+
+
+.mensagem-exibida .mensagem{
+    width: 336px;
+    height: 781px;
+    margin: 20px 0 0 20px;
+    border: none;
+    resize: none;
+}
+
+.mensagem:focus{
+    outline: none;
+}
+
+.botoes{
+    display: flex;
+    margin-top: 18px;
+}
+
+.btn-descriptar{
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    font-size: 20px;
+    color: #0A3871; 
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+}
+
+.btn-encriptar {
+    background: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    font-size: 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+}
+
+.btn-copiar {
+    background: #FFFFFF;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    font-size: 20px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    width: 336px;
+    margin: 0 0 0 20px;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    background: #0A3871;
+    border: none;
+    align-items: center;
+ 
+    
+}
+
+footer img {
+    height: 50px;
+    margin: 10px;
+    
+}
+
+
+.redesSociais{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    font-size: 20px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+
+    main {
+            display:grid;
+            margin: 0 auto;
+
+        }
+
+    .text-area {
+        width: 688px;
+        height: 343px;
+        margin: 50px 0;
+        position: relative;
+        float: none;
+    }
+
+    .mensagem-sction{
+        width: 688px;
+        height: 343px;
+        margin: 50px 0;
+        align-items: center;
+        justify-content: center;
+    }
+    .mensagem-sction img{
+        display: none;
+            
+    }
+
+    .mensagem-nao-exibida{
+        margin: 15% 0; 
+    }
+
+    .mensagem-exibida .mensagem{
+        width: 628px;
+        height: 220px;
+        margin: 20px 0 0 20px;
+        border: none;
+        resize: none;
+
+    }
+
+    .btn-copiar {
+        cursor: pointer;
+        height: 67px;
+        width: 668px;
+        margin: 0 auto;
+        
+    }  
+}
+
+@media (max-width: 767px) {
+
+    main {
+            display: block;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+    
+        }
+        
+        .text-section{
+            width: 343px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .text-area {
+            width: 100%;
+            height: 343px;
+            
+            
+        }
+    
+        .mensagem-sction {
+            width: 343px;
+            height: 595px;
+            margin: 50px auto;
+        }
+    
+        .mensagem-sction img {
+            display: none;
+    
+        }
+    
+        .mensagem-nao-exibida {
+            height: 435px;
+            padding: 150px 0;
+        }
+    
+        .mensagem-exibida .mensagem {
+            width: 303px;
+            height: 470px;
+    
+        }
+    
+        .btn-copiar {
+            cursor: pointer;
+            height: 67px;
+            width: 323px;
+            margin: 0 auto;
+    
+        }
+
+        span {
+            font-size: 16px;
+        }
+
+        .botoes{
+            display: block;
+        }
+
+        .btn-encriptar {
+            width: 343px;
+            height: 67px;
+            margin: 10px 0;
+        }
+
+        .btn-descriptar {
+            width: 343px;
+            height: 67px;
+            margin: 10px 0;
+        }
+
+
+}

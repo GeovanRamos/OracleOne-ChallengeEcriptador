@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <img class="LogoAlura" src="imagens/alura_logo.png" alt="Logo da Alura">
+    </header>
+    <main>
+        <section class="text-section">
+            <textarea class="text-area" id="text-area"  placeholder="Digite seu texto"></textarea>
+            <div class="informacao>">
+                <img src="imagens/exclamacao.png" alt="Icone de informacao">
+                <span>Apenas letras minúsculas e sem acento.</span>
+            </div>
+        
+            <div class="botoes">
+                <button class="btn-encriptar" id="encrypt-button" onclick="encriptar()" >Criptografar</button>
+                <button class="btn-descriptar" onclick="descriptar()">Descriptografar</button>
+        
+            </div>
+        </section>
+
+
+        <section class="mensagem-sction">
+            <div class="mensagem-nao-exibida">
+                <img src="imagens/boneco.png" alt="">
+                <h2>Nenhuma mensagem encontrada</h2>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+
+            <div class="mensagem-exibida">
+                <textarea class="mensagem" id="mensagem"  readonly></textarea>
+                <button class="btn-copiar" onclick="copiar()">Copiar</button>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <p class="copyright">&copy; Geovan Ramos</p>
+        <div class="redesSociais">
+        <a href="https://www.linkedin.com/in/geovanramos/"><img src="imagens/linkedin.png" alt="Icone Linkedin"> </a>
+        <a href="mailto:geovan.ramos97@gmail.com"><img src="imagens/gmail.png" alt="Icone Email"> </a>
+        </div>
+    
+    </footer>
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>
